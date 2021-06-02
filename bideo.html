@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bideo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bideo.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+  <section id="sec-1">
+    <div id="progressbar"></div>
+    <div id="scrollPath"></div>
+
+    <!-- <i  onclick="goBack()" class="far fa-3x fa-arrow-alt-circle-left"></i> -->
+    
+    <div id="link">
+      <h>Super gave background</h>
+      <div class="bideoback"><p><a onclick="goBack()">Klik hier om terug te gaan!</a></p> </div>
+      
+      
+    </div>
+  
+  <video id="background_video" loop muted></video>
+      <div id="video_cover"></div>
+      <div id="overlay"></div>
+
+    <script src="bideo.js"></script>
+    <script src="main.js"></script>
+  </section>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <script src="bideo.js"></script>
+    <script src="main.js"></script>
+    <script>
+      function goBack() {
+        window.history.back();
+      }
+    </script>
+
+</body>
+</html>
