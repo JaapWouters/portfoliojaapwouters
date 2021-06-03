@@ -163,10 +163,10 @@ li{
 
 /* ABOUT ME */
 .voorstel{
-    width: 550px;
+    width: 400px;
     position: relative;
     margin-left: 3%;
-    margin-top: -700px;
+    margin-top: -37%;
     /* bottom: 480px; */
 }
 
@@ -185,7 +185,7 @@ li{
 .aboutme{
     margin-left: 3%;
     margin-top: 13%;
-    padding-right: 70%;
+    width: 25%;
     font-family: 'Bebas Neue', cursive;
     font-size: 25px;
 }

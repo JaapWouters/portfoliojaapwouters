@@ -5,18 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio Jaap Wouters</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    
+
   </head>
   <body id="body1">
     <!-- <div class="test1" alt="background1"> -->
-    <nav>
+    <nav data-aos="fade-left">
       <ul>
         <li><a href="professionalidentity.html">Professional Identity</a></li>
-        <li><a href="interactivemedia.html">Interactivea Media</a></li>
+        <li><a href="interactivemedia.html">Interactive Media</a></li>
         <li><a href="communication.html">Communication</a></li>
         <li><a href="development.html">Development</a></li>
         <li><a href="research.html">Research</a></li>
@@ -29,14 +29,14 @@
         </main> -->
     </div>
     <div>
-      <img class="me" src="img/me2.png" alt="jaap" />
+      <img class="me" src="img/me4.png" alt="jaap" />
     </div>
-    <div class="voorstel">
+    <div data-aos="fade-right" class="voorstel">
       <div class="content1">Hey Hallo!</div>
       <div class="content2">Mijn naam is Jaap</div>
     </div>
 
-    <div class="aboutme">
+    <div data-aos="fade-right" class="aboutme">
       <h1>About Me</h1>
       <p1
         >Mijn naam is Jaap, ik ben 20 jaar oud en ik studeer ICT & Media Design
@@ -52,5 +52,9 @@
       allow="encrypted-media"
     ></iframe>
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
