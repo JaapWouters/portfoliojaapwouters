@@ -3,6 +3,18 @@
 
 *{
     box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h3{
+    font-family: 'Bebas Neue', cursive;
+}
+
+h1{
+    font-family: 'Bebas Neue', cursive;
+}
+
+a{
     font-family: 'Bebas Neue', cursive;
 }
 
@@ -184,7 +196,7 @@ li{
 
 .aboutme{
     margin-left: 3%;
-    margin-top: 13%;
+    margin-top: 10%;
     width: 25%;
     font-family: 'Bebas Neue', cursive;
     font-size: 25px;
@@ -196,6 +208,7 @@ li{
 }
 
 .aboutme h1{
+    font-family: 'Bebas Neue', cursive;
     margin: 0 !important;
 }
 
@@ -208,6 +221,7 @@ li{
     }
 
     nav a{
+        font-family: 'Bebas Neue', cursive;
         display: inline-block;
         text-decoration: none;
         margin-right: 30px;
@@ -221,11 +235,19 @@ li{
         -webkit-text-stroke-width: 2px;
         transition: 450ms;
     }
-}
 
+    .aboutme{
+        margin-left: 3%;
+        margin-top: 6%;
+        width: 25%;
+        font-family: 'Bebas Neue', cursive;
+        font-size: 25px;
+    }
+}
 
 /* DESIGN */
 .design-koptekst{
+    font-family: 'Bebas Neue', cursive;
     text-decoration: none;
     font-size: 120px;
     font-weight: normal;
@@ -287,6 +309,7 @@ li{
   }
 
 .kopjes{
+    font-family: 'Bebas Neue', cursive;
     display: inline-block;
     border-bottom: 2px solid black;
     color: black;
@@ -393,13 +416,14 @@ padding-right: 20%;
     font-size: 45px;    
     text-align: center;
     -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-width: 1.7px;
+    -webkit-text-stroke-width: 0.1px;
     /* text-shadow: 1px 1px 0 rgb(0, 0, 0); */
     box-shadow: 5px 5px 15px rgba(0,0,0,0.5);
 }
 
 
 .port-card h1 {
+    font-family: 'Bebas Neue', cursive;
     margin-top: 5px;
     margin-bottom: 8px;
     margin-left: auto;
@@ -424,6 +448,11 @@ padding-right: 20%;
     margin-left: 3rem;
     margin-right: 3rem;
     margin-top: -350px;
+    transition: 350ms;
+}
+
+.port-container:hover{
+    transform: scale(1.1);
 }
 
 .roww {
@@ -432,3 +461,28 @@ padding-right: 20%;
     /* margin-bottom: 28rem; */
 }
 
+/* MEDIATECH */
+.ytiframe{
+    margin-top: 95%;
+    margin-left: 15%;
+}
+
+.ytiframe1{
+    margin-top: 15%;
+    margin-left: 15%;
+}
+
+.ytiframe2{
+    margin-top: 45%;
+    margin-left: 15%;
+}
+
+.ytiframe3{
+    margin-top: 15%;
+    margin-left: 15%;
+}
+
+/* SPRINT X */
+.pdfbutton{
+    width: 100%;
+}

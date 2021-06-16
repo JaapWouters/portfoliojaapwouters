@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contentpage.css">
+    <link rel="stylesheet" href="fotos.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" href="img/jaapwebicon.png">
+</head>
+<body>
+    <div id="progressbar"></div>
+    <div id="scrollPath"></div>
+
+    <i  onclick="goBack()" class="far fa-3x fa-arrow-alt-circle-left"></i>
+    
+    <section id="sec-1">
+      <div class="container3">
+        <div class="container2"> <img class="background-img2" src="img/Vorm1.svg" alt="background"> </div>
+        <div data-aos="zoom-in" class="design-koptekst">Snake</div>
+        <a href="#sec-2"> <div> <img class="scroll-img"src="img/scroll.jpg" alt=""> </div> </a>
+      </div>
+    </section>
+
+    <section id="sec-2">
+        <div class="wrapper">
+            <div class="container">
+                <div class="content4">
+            <!-- Slideshow container -->
+
+  <div class="picture1">
+      <img src="img\snake.gif" alt="">
+  </div>
+  
+  <div class="picture2">
+      <img src="img\snakecode.png" alt="">
+  </div>
+</div>
+        
+              <div class="content4">
+                <div class="library-content">
+                  <div class="hoofdtekst" data-aos="fade-up">Introductie</div>
+                  <p data-aos="fade-up">
+                    Om mijn development leeruitkomsten aan te tonen had ik wat javascript POC's nodig. Deze heb ik dan ook een aantal gemaakt. 
+                    Een van mijn projecten is snake. Snake is een game waarbij je met een slang "eten" moet verzamelen om langer te worden. Naarmate je langer wordt, 
+                    des te moeilijker de game wordt.
+                  </p>
+                </div>
+                  
+                  
+                  <div class="library-content">
+                    <div class="hoofdtekst" data-aos="fade-up">Snake de game</div>
+                    <br><br>
+                    <h2 data-aos="fade-up">Mijn idee</h2>
+                  <p data-aos="fade-up">
+                    Om wat meer met javascript te werken werd mij aangeraden om wat kleine opdrachtjes te doen. Zo stelde Bernd-Jan voor om een kleine game 
+                    te maken. Ik was het hier mee eens en koos er voor om snake te maken. 
+                  </p>
+                    <h2 data-aos="fade-up">Uitwerking & Bugs</h2>
+                  <p data-aos="fade-up">
+                    Ik heb dit project gemaakt met behulp van internet, ik heb namelijk een tutorial gevolgd om snake te bouwen. De persoon die dit mij uitlegde 
+                    was erg snel en dus begreep ik wat dingen niet. Na een paar keer dit gekeken te hebben deed mijn snake game het ook. De game is niet helemaal 
+                    waterdicht, er zitten namelijk een paar functies niet in. Zo kun je bijvoorbeeld niet met W, A, S, D spelen en loopt de game direct door wanneer je tegen 
+                    je eigen staart aan botst. Ook kun je door de wand heen wat bij sommige snake varianten niet mogelijk is.
+                    <br><br>
+                    <a href="snakegame.html">Klik hier om het prototype te spelen.</a>
+                  </p>                
+                
+                <div class="ruimtesnakeuitleg">
+                <div class="library-content">
+                  <div class="hoofdtekst" data-aos="fade-up">Code</div>
+                    <p data-aos="fade-up">
+                    Ik heb voor de code geen aparte javascript file aangemaakt, het was namelijk niet super veel code dus heb ik het direct in een html file gezet.
+                  </p>
+                  <h2 data-aos="fade-up">Uitleg</h2>
+                  <p data-aos="fade-up">
+                    Om de slang aan te tonen worden de variable px (player postion X) en py (player postion Y) gebruikt, de slang begint in het midden van het veld omdat hij op het 10e vakje geplaatst wordt.
+                    Om aan te geven hoe groot het speelveld moet zijn worden gs (gridsize) en tc (tilecapable) gebruikt. Het veld is 20 bij 20 groot.
+                    Om het "eten" aan te tonen worden av (apple X) en ay (apple Y) gebruikt, deze wordt op 15 gezet. De appel start dus op vakje 15 van boven en links af.
+                    <br><br>
+                    Om de slang daadwerkelijk te laten bewegen wordt er steeds een vakje bij geteld of afgehaald, dit wordt gedaan door het blokje van de slang 
+                    te vervangen met een nieuw blokje of juist om een blokje weg te halen.
+                    <br><br>
+                    De staart van de slang wordt natuurlijk ook langer en korter, dit komt door variable trail.length. Wanneer X gelijk is aan de speler postie van X en Y gelijk is 
+                    aan de speler postie van Y. Dan ontstaat er dus een botsing en gaat de staart terug naar 5 blokjes lang. Als de slang het "eten" aanraakt wordt er 
+                    doormiddel van tail++ een blokje toegevoegd aan de staart van de slang. Het eten verschijnt willekeurig op de map, dit komt door de rekensom Math.random. 
+                    De X en Y positie worden na het aanraken van het "eten" willekeurig gekozen.
+                    <br><br>
+                    De functie "keyPush" is er om de slang te laten bewegen. Elke case staat voor een pijltjes toets. 37 tot 40 zijn dus de nummers 
+                    voor de pijltjes toetsen met de klok mee. Om het blokje te laten bewegen haal je bij 37 en 38 -1 er af en bij 39 en 40 1 er bij op. 
+                    Dit is hoe je de richting van de slang bepaald.
+                    <br><br>
+                        <a href="https://github.com/JaapWouters/portfoliojaapwouters.git">Github link</a>
+                  </p> 
+                </div>
+              </div>
+        
+              
+              <div class="ruimtemyposter1">
+                <div class="library-content">
+                <div class="hoofdtekst" data-aos="fade-up" >Wat heb ik geleerd?</div>
+                <p data-aos="fade-up">
+                  Ik heb na het aandachtig volgen van de video geleerd waar meer en deel van de code voor staat. Ik javascript vind het lastig omdat 
+                  er toch een stukje wiskunde in terug komt. Ook zijn naar mijn mening sommige dingen in javascript code niet logisch, maar dat is mijn brein 
+                  die dat nog niet begrijpt.
+                </p>
+              </div>
+            </div>
+            <br><br><br>
+            <div class="ruimtemyposter1">
+              <div class="library-content">
+                <div class="hoofdtekst" data-aos="fade-up">Wat doe ik de volgende keer anders?</div>
+                <p data-aos="fade-up">
+                  Wat ik de volgende keer anders wil gaan doen is eerder dingen plannen. Ik ben in week 2 pas echt begonnnen met sprint x, dit kwam omdat ik het ook erg druk had met mijn portfolio. 
+                  Bijhorend het eerder plannen wil ik meer feedback vragen, de reden dat ik pas wat later deed is omdat ik mijn sprint x eerst volledig af wilde hebben.
+                </p>
+              </div>
+            </div>
+
+            <div class="ruimtemyposter1">
+              <div class="library-content" data-aos="fade-up">
+                <div class="hoofdtekst">Feedback</div>
+                <p data-aos="fade-up">
+                  Door alle drukte met mijn portfolio ben ik vergeten om feedback een een docent te vragen. 
+                  Ik ontvang nog graag feedback achteraf als er een docent is die daar tijd voor heeft.
+                </p>
+                <br><br><br><br><br><br><br><br>
+              </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <script type="text/javascript">
+      let progress = document.getElementById("progressbar");
+      let totalHeight = document.body.scrollHeight - window.innerHeight;
+      window.onscroll = function(){
+        let progressHeight = (window.pageYOffset / totalHeight) * 100;
+        progress.style.height = progressHeight + "%";
+      }
+    </script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <script>
+      function goBack() {
+        window.history.back();
+      }
+    </script>
+</body>
+</html>

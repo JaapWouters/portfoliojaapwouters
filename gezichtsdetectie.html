@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gezichtsdetectie</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contentpage.css">
+    <link rel="stylesheet" href="fotos.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" href="img/jaapwebicon.png">
+</head>
+<body>
+    <div id="progressbar"></div>
+    <div id="scrollPath"></div>
+
+    <i  onclick="goBack()" class="far fa-3x fa-arrow-alt-circle-left"></i>
+    
+    <section id="sec-1">
+      <div class="container3">
+        <div class="container2"> <img class="background-img2" src="img/Vorm1.svg" alt="background"> </div>
+        <div data-aos="zoom-in" class="design-koptekst">Gezichtsdetectie</div>
+        <a href="#sec-2"> <div> <img class="scroll-img"src="img/scroll.jpg" alt=""> </div> </a>
+      </div>
+    </section>
+
+    <section id="sec-2">
+        <div class="wrapper">
+            <div class="container">
+                <div class="content4">
+            <!-- Slideshow container -->
+
+  <div class="picture1">
+      <img src="img\detectie.gif" alt="">
+  </div>
+  
+  <div class="picturedetectie1">
+      <img src="img/javacode.png" alt="">
+  </div>
+
+  <div class="picturedetectie2">
+    <img src="img/detectiehtmlcode.png" alt="">
+</div>
+</div>
+        
+              <div class="content4">
+                <div class="library-content">
+                  <div class="hoofdtekst" data-aos="fade-up">Introductie</div>
+                  <p data-aos="fade-up">
+                    Om mijn development leeruitkomsten aan te tonen had ik wat javascript POC's nodig. Deze heb ik dan ook een aantal gemaakt. 
+                    Een van mijn projecten is gezichtsdetectie. Deze javascript POC maakt ook deel uit van mijn sprint x project, ik ga hier alleen wat meer in op de code.
+                  </p>
+                </div>
+                  
+                  
+                  <div class="library-content">
+                    <div class="hoofdtekst" data-aos="fade-up">Gezichtsdetectie</div>
+                    <br><br>
+                    <h2 data-aos="fade-up">Mijn idee</h2>
+                  <p data-aos="fade-up">
+                    Ik wilde meer dingen gaan maken omtrent development, ik heb op het internet gezocht naar javascript POC's waarbij gezichtsherkenning of detectie 
+                    van toepassing komt. Zo kwam ik langs een POC over gezichtsherkenning, eentje over gezichtsdetectie en een waarbij er handgebaren werden gedetecteerd. 
+                    Ik wilde een van deze ideeën gaan maken.
+                  </p>
+                    <h2 data-aos="fade-up">Uitwerking & Bugs</h2>
+                  <p data-aos="fade-up">
+                    Dit project heb ik niet uit mijn mouw geschud. Ik heb gebruikt gemaakt van een tutorial om dit te kunnen realiseren. Doordat ik de tutorial 
+                    op een redelijk tempo gevolgd heb begreep ik een groot gedeelte van de code. Ik ben een paar keer terug gegeaan om te weten waar bepaalde stukken code voor stonden.
+                    <br><br>
+                    Ik kwam er al vrij snel achter dat de code erg fragiel was. Zo werkt moest ik bijvoorbeeld de models op een speciale manier inladen om ze te laten werken. 
+                    Ook werkt de gezichtsdetectie alleen maar lokaal, zodra ik deze online (dus op deze website) open werkt het niet en krijg je geen camera te zien. 
+                    Je kunt proberen om het prototype te testen maar het zal hoogstwaarschijnlijk niet werken. :(
+                    <br><br>
+                    <a href="detection.html">Klik hier om een prototype te zien.</a>
+                  </p>                
+                
+                  <div class="ruimtebrand1">
+                    <div class="library-content">
+                      <div class="hoofdtekst" data-aos="fade-up">Code</div>
+                        <p data-aos="fade-up">
+                        Ik heb voor de code verschillende files aangemaakt. Een voor het script zelf, een voor de face-api, een html file om je camera op te laten zien en een mapje met 
+                        de models van de face-api.
+                      </p>
+                      <h2 data-aos="fade-up">Uitleg</h2>
+                      <p data-aos="fade-up">
+                        Doormiddel van Promise.all worden alle models van de face-api geladen. Zo is de tinyFaceDetector voor detectie van een gezicht. Het faceLandmark68Net model maakt 
+                        het mogelijk om verschillende delen van je gezicht te laten zien. Dit zijn je wenkbrouwen, ogen, neus, en mond. FaceRecognitionNet wordt gebruikt om aan te tonen waar je gezicht is in beeld. 
+                        En als laatste wordt het faceExperssionNet model gebruikt om verschillende emoties aan te tonen.
+                        <br><br>
+                        Om je camera in te laden wordt de functie startVideo gebruikt. In de method stream zet ik een source object voor video, dit maakt het mogelijk om de media die er op je webcam 
+                        afspeelt in te laden.
+                        <br><br>
+                        Ik gebruik een event listener om code uit te voeren wanneer de webcam aan staat. Doormiddel van de functie setInterval wordt de code hierin meerdere keren achter elkaar uitgevoerd. 
+                        Voor elk gezicht dat de camera opmerkt wordt gezichtsdetectie uitgevoerd, dit komt door een functie in de face-api genaamd "detectAllFaces". Deze detectie wordt elke 100 milliseconde uitgevoerd. 
+                        Na het detecteren worden alle models van de face-api uitgevoerd. Al deze models worden in een canvas ingeladen. Dit canvas is op de juiste maat gestijld. 
+                        Voor dat we alle models gaan tekenen wordt elke keer het canvas gecleard zodat de vorige detecties niet op het canvas blijven staan. 
+                        Hierna worden alle models getekend in het canvas zodat je ze ook echt live op je webcam ziet verschijnen.
+                        <br><br>
+                        Ik heb het script van de face-api boven het script van de gezichtsdetectie gezet. Dit doe ik zodat de face-api eerder ingeladen wordt dan het gezichtsdetectie script. 
+                        Als ik dit zou omdraaien ontstaan er errors omdat het programma eerst het script leest en daarna pas de data van de face-api ziet. Zoals je ziet in het 
+                        HTML file is de video ook op de juiste manier gestijld. Maak je de resolutie groter dan wordt je detectie ook groter en minder accuraat.
+                        <br><br>
+                        <a href="https://github.com/JaapWouters/portfoliojaapwouters.git">Github link</a>
+                      </p> 
+                    </div>
+                  </div>
+
+              <div class="ruimte3">
+                <div class="library-content">
+                <div class="hoofdtekst" data-aos="fade-up" >Wat heb ik geleerd?</div>
+                <p data-aos="fade-up">
+                  Tijdens de weken van sprint x heb in een korte tijd wat meer geleerd over javascript en api's. Mijn POC verliep daarintegen niet klakkeloos, zo zijn er een paar dingen waar ik tegen aan liep. Zo ben ik er bijvoorbeeld 
+                  achter gekomen dat het prototype niet inlaad op een online website, maar lokaal wel. Dit gebeurd omdat POC blijkbaar heel fragiel is met waar het staat opgeslagen en hoe het geopend word. Een echte verklaring heb ik 
+                  er niet voor. Zie het gifje boven aan de pagina voor een voorbeeld.
+                  <br><br>
+                  De verdere fouten die ik tegen kwam zie je in het PDF-bestand hieronder. 
+                  <br><br>
+                  <a href="files/Fouten waar ik tegen aan liep.pdf">
+                    <img  class="pdfbutton" data-aos="fade-up" class="case-image aos-init aos-animate" src="img/foutenpdf.png">
+                  </a>
+                </p>
+              </div>
+            </div>
+            <div class="ruimtebrand1">
+              <div class="library-content">
+                <div class="hoofdtekst" data-aos="fade-up">Wat doe ik de volgende keer anders?</div>
+                <p data-aos="fade-up">
+                  Wat ik de volgende keer anders wil gaan doen is eerder dingen plannen. Ik ben in week 2 pas echt begonnnen met dit project voor sprint x, dit kwam omdat ik het ook erg druk had met mijn portfolio. 
+                  Bijhorend het eerder plannen wil ik meer feedback vragen en dit dan ook optijd kunnen vragen.
+                </p>
+              </div>
+            </div>
+
+            <div class="ruimte5">
+              <div class="library-content" data-aos="fade-up">
+                <div class="hoofdtekst">Feedback</div>
+                <p data-aos="fade-up">
+                  "Jammer dat het prototype niet werkt. Probeer ajb zo volledig mogelijk te zijn in het presenteren van uitgangspunt 
+                  (“Dit onderzoek gaat over hoe veilig gezichtsherkenning nou daadwerkelijk is”….hoe veilig is het?) en resultaten, tegen welke technische zaken liep je aan waardoor 
+                  je het prototype niet aan de praat kreeg. Proces staat verder netjes gepresenteerd in je portfolio, vul ajb aan met een relevante reflectie en eindconclusie. succes!" 
+                  <br><br>
+                  ~ Berry Sanders
+                </p>
+              </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <script type="text/javascript">
+      let progress = document.getElementById("progressbar");
+      let totalHeight = document.body.scrollHeight - window.innerHeight;
+      window.onscroll = function(){
+        let progressHeight = (window.pageYOffset / totalHeight) * 100;
+        progress.style.height = progressHeight + "%";
+      }
+    </script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <script>
+      function goBack() {
+        window.history.back();
+      }
+    </script>
+</body>
+</html>

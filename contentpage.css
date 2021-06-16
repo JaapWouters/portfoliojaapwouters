@@ -1,0 +1,86 @@
+.hoofdtekst{
+    font-family: 'Bebas Neue', cursive;
+    display: inline-block;
+    border-bottom: 2px solid black;
+    color: black;
+    text-decoration: none;
+    /* -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px; */
+    font-weight: 500;
+    font-size: 300%;
+    
+}
+
+.library-content h2{
+    font-family: 'Bebas Neue', cursive;
+    display: inline-block;
+    border-bottom: 2px solid black;
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    margin-bottom: -15%;
+    
+}
+
+.library-content p{
+    font-size: 110%;
+}
+
+.ruimte{
+    margin-top: 27%;
+}
+
+.ruimte-after{
+    margin-top: 48%;
+}
+
+
+.ruimte-illu{
+    margin-top: 68%;
+}
+
+
+.ruimtesprintx{
+    margin-top: 40%;    
+}
+
+
+.ruimte4{
+    margin-top: 30%; 
+}
+
+.ruimtebrand1{
+    margin-top: 15%; 
+}
+
+.ruimtebrand2{
+    margin-top: 15%; 
+}
+
+.ruimtebrand3{
+    margin-top: 15%; 
+}
+
+.ruimtebrand4{
+    margin-top: 15%; 
+}
+
+.ruimtebrand5{
+    margin-top: 15%; 
+}
+
+.ruimtemyposter1{
+    margin-top: 5%;
+}
+
+.ruimtemyposter2{
+    margin-top: 5%;
+}
+
+.ruimtemyposter3{
+    margin-top: 5%;
+}
+
+.ruimtesnakeuitleg{
+    margin-top: 60%;
+}
