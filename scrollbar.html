@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrollbar</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contentpage.css">
+    <link rel="stylesheet" href="fotos.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" href="img/jaapwebicon.png">
+</head>
+<body>
+    <div id="progressbar"></div>
+    <div id="scrollPath"></div>
+
+    <i  onclick="goBack()" class="far fa-3x fa-arrow-alt-circle-left"></i>
+    
+    <section id="sec-1">
+      <div class="container3">
+        <div class="container2"> <img class="background-img2" src="img/Vorm1.svg" alt="background"> </div>
+        <div data-aos="zoom-in" class="design-koptekst">Scrollbar</div>
+        <a href="#sec-2"> <div> <img class="scroll-img"src="img/scroll.jpg" alt=""> </div> </a>
+      </div>
+    </section>
+
+    <section id="sec-2">
+        <div class="wrapper">
+            <div class="container">
+                <div class="content4">
+            <!-- Slideshow container -->
+
+  <div class="picture1">
+      <img src="img/portfoliogif.gif" alt="">
+  </div>
+  
+  <div class="picture2">
+      <img src="img\scrollbarcodejava.png" alt="">
+  </div>
+
+  <div class="picturedetectie2">
+    <img src="img\scrollbarcode.png" alt="">
+</div>
+</div>
+        
+              <div class="content4">
+                <div class="library-content">
+                  <div class="hoofdtekst" data-aos="fade-up">Introductie</div>
+                  <p data-aos="fade-up">
+                    Om mijn development leeruitkomsten aan te tonen had ik wat POC's nodig. Deze heb ik dan ook een aantal gemaakt. 
+                    Een van mijn projectjes is een custom scrollbar. Deze scrollbar is gemaakt doormiddel van een CSS animatie en een stukje javascript om hem te laten scrollen.
+                  </p>
+                </div>
+                  
+                  
+                  <div class="library-content">
+                    <div class="hoofdtekst" data-aos="fade-up">Scrollbar</div>
+                    <br><br>
+                    <h2 data-aos="fade-up">Mijn idee</h2>
+                  <p data-aos="fade-up">
+                    Om mijn portfolio wat meer persoonlijk te maken wilde ik een custom scrollbar gaan maken. Dit wilde ik om wat meer kleurmatching te krijgen op 
+                    mijn portfolio. Ik heb de kleuren van de scrollbar gemixt met mint groen en cyaan. Dit waren eerst ook de kleuren die ik gebuikt had voor mij website. 
+                    Ik heb cyaan er uiteindelijk in gehouden om niet alleen groen te gebruiken
+                  </p>
+                    <h2 data-aos="fade-up">Uitwerking & Bugs</h2>
+                  <p data-aos="fade-up">
+                    Ik heb dit projectje gemaakt met behulp van internet, ik heb namelijk een tutorial gevolgd om deze scrollbar te maken. Ik de code is volledig in CSS 
+                    het namelijk alleen een animatie. De kleuren die aangeeft om in je scrollbar te hebben bewegen door de scrollbar heen. Doorde blur en de gloed geeft dit 
+                    een cool effect. Een kleine bug aan de scrollbar is dat hij op sommige pagina's niet helemaal tot het einde van de pagina komt. 
+                  </p>                
+                
+                <div class="ruimte15">
+                <div class="library-content">
+                  <div class="hoofdtekst" data-aos="fade-up">Code</div>
+                    <p data-aos="fade-up">
+                    Ik heb de code in mijn style.css file gezet en deze vervolgens gebruikt in al mijn HTML files.
+                  </p>
+                  <h2 data-aos="fade-up">Uitleg</h2>
+                  <p data-aos="fade-up">
+                    Ik gebruik het id: scrollPath hier om te bepalen hoe breed de scrollbar word. Hierna voeg de optie voor kleur om de scrollbar toe.
+                    Met het id: progressbar bepaal je hoe breed de gradient van de scroll bar moet zijn en geef je hem kleur doormiddel van een random gradient.
+                    <br><br>
+                    Door het gebruik van de keyframes kun je de kleuren laten bewegen, zo zie je dat de gradient 360 graden gedraaid wordt.
+                    Via het id: progressbar:before en progressbar:before voeg ik een blur toe aan de scrollbar zodat je een neon effect krijgt op de balk.
+                    <br><br>
+                    Ik elk HTML file van mij staat onder aan een script die de scrollbar laat werken. Met dit stukje script bepaal je waar de scrollbar moet 
+                    staren en tot hoever hij moet gaan.
+                    <br><br>
+                        <a href="https://github.com/JaapWouters/portfoliojaapwouters.git">Github link</a>
+                  </p> 
+                </div>
+              </div>
+        
+              
+              <div class="ruimtemyposter1">
+                <div class="library-content">
+                <div class="hoofdtekst" data-aos="fade-up" >Wat heb ik geleerd?</div>
+                <p data-aos="fade-up">
+                  Ik heb geleerd hoe je een scrollbar kunt stijlen en hoe je de originele kan laten verdwijnen. Naast dat het ik dus ook 
+                  geëxperimenteerd met animate in CSS. Ik ben benieuwd wat dit nog meer te bieden heeft.
+                </p>
+              </div>
+            </div>
+            <br><br><br>
+            <div class="ruimtemyposter1">
+              <div class="library-content">
+                <div class="hoofdtekst" data-aos="fade-up">Wat doe ik de volgende keer anders?</div>
+                <p data-aos="fade-up">
+                  Ik wil de volgende keer graag een andere custom scrollbar maken, zo leer ik telkens nieuwe technieken en kan ik deze wellicht toepassen in andere projecten.
+                </p>
+              </div>
+            </div>
+
+            <div class="ruimtemyposter1">
+              <div class="library-content" data-aos="fade-up">
+                <div class="hoofdtekst">Feedback</div>
+                <p data-aos="fade-up">
+                  Door alle portfolio reviews door heb ik niet echt feedback ontvangen over mijn scrollbar. Er werd gezegd dat hij er 
+                  tof uit zag.
+                </p>
+                <br><br><br><br><br><br><br><br>
+              </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <script type="text/javascript">
+      let progress = document.getElementById("progressbar");
+      let totalHeight = document.body.scrollHeight - window.innerHeight;
+      window.onscroll = function(){
+        let progressHeight = (window.pageYOffset / totalHeight) * 100;
+        progress.style.height = progressHeight + "%";
+      }
+    </script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <script>
+      function goBack() {
+        window.history.back();
+      }
+    </script>
+</body>
+</html>

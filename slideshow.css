@@ -14,7 +14,7 @@
   display: none;
 }
 
-/* Next & previous buttons */
+/* Volgende en vorige knoppen */
 .prev, .next {
   cursor: pointer;
   position: absolute;
@@ -30,18 +30,18 @@
   user-select: none;
 }
 
-/* Position the "next button" to the right */
+/* Plaatsr de "volgende knop" naar rechts */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
+/* On hover, doorzichtige zwarte achtergrond bij de "volgende knop" en "vorige knop" */
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
 }
 
-/* Caption text */
+/* tekst onderin (heb ik weg gehaald) */
 .text {
   color: #f2f2f2;
   font-size: 15px;
@@ -52,7 +52,7 @@
   text-align: center;
 }
 
-/* Number text (1/3 etc) */
+/* Nummers linksboven */
 .numbertext {
   color: #f2f2f2;
   font-size: 12px;
@@ -61,7 +61,7 @@
   top: 0;
 }
 
-/* The dots/bullets/indicators */
+/* Cirkels onderaan het carousel */
 .dot {
   cursor: pointer;
   height: 15px;

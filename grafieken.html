@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grafieken</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contentpage.css">
+    <link rel="stylesheet" href="fotos.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" href="img/jaapwebicon.png">
+</head>
+<body>
+    <div id="progressbar"></div>
+    <div id="scrollPath"></div>
+
+    <i  onclick="goBack()" class="far fa-3x fa-arrow-alt-circle-left"></i>
+    
+    <section id="sec-1">
+      <div class="container3">
+        <div class="container2"> <img class="background-img2" src="img/Vorm1.svg" alt="background"> </div>
+        <div data-aos="zoom-in" class="design-koptekst">Grafieken</div>
+        <a href="#sec-2"> <div> <img class="scroll-img"src="img/scroll.jpg" alt=""> </div> </a>
+      </div>
+    </section>
+
+    <section id="sec-2">
+        <div class="wrapper">
+            <div class="container">
+                <div class="content4">
+            <!-- Slideshow container -->
+
+
+    
+
+  <div class="commu4">
+      <img src="img/Grafiek 1 A4.png" alt="">
+  </div>
+
+  <div class="picturegraf2">
+    <img src="img/Grafiek 2 A4.png" alt="">
+  </div>
+
+  
+</div>
+        
+              <div class="content4">
+                <div class="library-content">
+                  <div class="hoofdtekst" data-aos="fade-up">Illustrator Grafieken</div>
+                  <p data-aos="fade-up">
+                    De Illustrator opdracht bestond uit 2 opdrachten. Bij opdracht 1 moesten er doormiddel van de Graph tool in Illustrator verschillende 
+                    grafieken gemaakt worden waarbij je online open data gebruikte. Ik had bij een paar grafieken open data gebruikt en bij een paar grafieken zelf data toegevoegd. 
+                    Ik vond het best wel lastig de grafieken te maken, je moet er wel eerst even achter komen hoe de data in de grafieken te staan komt.
+                    <br><br>
+                    Ik heb de open data sets van Oss gebruikt voor sommige grafieken. Deze waren niet al te groot en prima bruikbaar voor deze opdracht.
+                  </p>
+                  </div>
+
+            <div class="ruimte4">
+              <div class="library-content">
+                <div class="hoofdtekst" data-aos="fade-up">Wat heb ik geleerd?</div>
+                <p data-aos="fade-up">
+                    Ik heb met deze opdracht een hoop geleerd, vooral op het gebied van Illustrator. Dit was namelijk een programma die 
+                    ik voorheen nog nooit gebruikt had. Illustrator had wat tijd nodig om onder de knie te krijgen. Naar mijn mening verscheen 
+                    de data niet logisch in de grafiek waardoor ik het telkens niet goed deed.
+                </p>
+              </div>
+            </div>
+
+            <div class="ruimte5">
+              <div class="library-content">
+                <div class="hoofdtekst" data-aos="fade-up">Wat doe ik de volgende keer anders?</div>
+                <p data-aos="fade-up">
+                  Iets wat ik de volgende keer anders zou doen is vroeg tijdig feedback vragen, hier ging ik deze met deze opdracht de mist in. Ik begon net wat te laat met 
+                  mijn opdrachten en had ze onderschat. Doordat ik niet eerder feedback gevragen had, heb ik deze opdracht voor de focus mediatechnieken niet behaald. Toch ben ik 
+                  wel trots op wat ik gecreeërd heb. Op de ene dingen ben ik meer trots dan op de andere, maar in het algemeen ben ik tevreden met mijn werk.
+                </p>
+              </div>
+            </div>
+
+            <div class="ruimte5">
+              <div class="library-content">
+                <div class="hoofdtekst" data-aos="fade-up">Algemene feedback</div>
+                <p data-aos="fade-up">
+                  "Hey Jaap, De grafieken zijn goed gemaakt en zijn 
+                  overzichtelijk."
+                  <br><br>
+                  ~ Rens Brouns
+                  <br><br><br>
+                  "Je grafieken zijn wat minder dan de rest. 
+                  De data in de grafieken klopt niet echt en het is onduidelijk waar het over gaat."
+                  <br><br>
+                  ~ Joris Ariëns
+                </p>
+              </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <script type="text/javascript">
+      let progress = document.getElementById("progressbar");
+      let totalHeight = document.body.scrollHeight - window.innerHeight;
+      window.onscroll = function(){
+        let progressHeight = (window.pageYOffset / totalHeight) * 100;
+        progress.style.height = progressHeight + "%";
+      }
+    </script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <script>
+      function goBack() {
+        window.history.back();
+      }
+    </script>
+
+</body>
+</html>

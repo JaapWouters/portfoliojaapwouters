@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireframes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="slideshow.css">
+    <link rel="stylesheet" href="contentpage.css">
+    <link rel="stylesheet" href="fotos.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" href="img/jaapwebicon.png">
+</head>
+<body>
+    <div id="progressbar"></div>
+    <div id="scrollPath"></div>
+
+    <i  onclick="goBack()" class="far fa-3x fa-arrow-alt-circle-left"></i>
+    
+    <section id="sec-1">
+      <div class="container3">
+        <div class="container2"> <img class="background-img2" src="img/Vorm1.svg" alt="background"> </div>
+        <div data-aos="zoom-in" class="design-koptekst">Wireframes</div>
+        <a href="#sec-2"> <div> <img class="scroll-img"src="img/scroll.jpg" alt=""> </div> </a>
+      </div>
+    </section>
+
+    <section id="sec-2">
+        <div class="wrapper">
+            <div class="container">
+                <div class="content4">
+            <!-- Slideshow container -->
+            <div class="commu4">
+                <img src="img/wireframes.png" alt="">
+            </div>
+
+  
+</div>
+        
+              <div class="content4">
+                  <div class="library-content">
+                    <div class="hoofdtekst">Portfolio wireframes</div>
+                  <p>
+                    Voor mijn portfolio heb ik in het begin een kleine wireframe gemaakt, deze heb ik gemaakt in Adobe XD.
+                  </p>
+                    <h2>Opzet</h2>
+                  <p>
+                   Zoals je ziet zitten er vormen in mijn wireframe, ik heb dit gedaan omdat ik dat mooi vond staan. De vorm is in Adobe XD gemaakt. 
+                   Ook heb ik in dit wireframe nog blauwe bollen bij mijn navigatie menu, deze heb ik later weg gehaald omdat ik het te druk vond worden. 
+                   Ook zie je een foto van mij midden op de pagina staan, zo zie je direct wie de persoon is die dit portfolio gemaakt heeft. Een vrij direct introductie.
+                  </p>
+                  <h2>Kleuren</h2>
+                  <p>
+                   Als kleuren koos ik voor mint groen en licht blauw/cyaan. Het zijn beide ook pastel kleuren, ik ben zelf fan van pastel kleuren. Ik vind dat ze er netjes en rustig uit zien. 
+                   Ookal heb ik de blauwe bollen weg gedaan, de blauwe kleur komt nog terug in de scrollbar. Ook matcht mijn blauwe overhemd met dit kleur schema.
+                  </p>
+
+            <div class="ruimte15">
+              <div class="library-content">
+                <div class="hoofdtekst">Wat heb ik geleerd?</div>
+                <p>
+                  Ik heb geleerd met Adobe XD te werken en dat het heel handig is om in dit programma eerst een voorbeeld voor jezelf en andere te maken. 
+                  Op deze manier is het makkelijker om je website uit te werken.
+                </p>
+              </div>
+            </div>
+
+            <div class="ruimtemyposter1">
+              <div class="library-content">
+                <div class="hoofdtekst">Wat doe ik de volgende keer anders?</div>
+                <p>
+                  De volgende keer wil ik meer wireframes maken, ik heb nu maar 2 pagina's. Het is handig om er meer te hebben, dit vooral zodat je een beeld hebt 
+                  van je gehele website. 
+                </p>
+              </div>
+            </div>
+        </div>
+
+        <div class="ruimtemyposter1">
+            <div class="library-content" data-aos="fade-up">
+              <div class="hoofdtekst">Feedback</div>
+              <p data-aos="fade-up">
+                Goede composities qua tekst en beeld. Blauwe kleurbollen met of zonder schaduw, aanhouden aan de stijl van de hele website.
+                Schaduwen/gradients overal gebruiken of helemaal niet.
+                Logo versimpelen en net alles op een lijn zetten, de “P” op de goede lijn zetten.
+                Foto van mij kan wat lichter, is nu wat donker.
+                Muziekvoorkeur wellicht ergens bij about me (spotify embed).
+                Tekst omlijnging misschien dunner.
+                <br><br>
+                ~ Lisette, Woody & Evert
+              </p>
+              <br><br><br><br><br><br><br><br>
+            </div>
+          </div>
+    </section>
+    
+
+    <script type="text/javascript">
+      let progress = document.getElementById("progressbar");
+      let totalHeight = document.body.scrollHeight - window.innerHeight;
+      window.onscroll = function(){
+        let progressHeight = (window.pageYOffset / totalHeight) * 100;
+        progress.style.height = progressHeight + "%";
+      }
+    </script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <script>
+      function goBack() {
+        window.history.back();
+      }
+    </script>
+
+    <script type="text/javascript" src="slideshow.js"></script>
+
+</body>
+</html>

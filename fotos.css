@@ -1,4 +1,20 @@
 /* FOTOS */
+.slideshow-container3 {
+  max-width: 550px;
+  position: relative;
+  margin: auto;
+  top: 7%;
+  left: -5%;
+}
+
+.slideshow-container4 {
+  max-width: 550px;
+  position: relative;
+  margin: auto;
+  top: 12%;
+  left: -5%;
+}
+
 .picture1 img{
     height: auto;
     width: 70%;
@@ -87,5 +103,82 @@
     height: auto;
     width: 70%;
     margin-top: 2%;
+    margin-left: 15%;
+  }
+
+  .commu1 img{
+    height: auto;
+    width: 70%;
+    margin-top: 20%;
+    margin-left: 15%;
+  }
+
+  .commu2 img{
+    height: auto;
+    width: 70%;
+    margin-top: 20%;
+    margin-left: 15%;
+  }
+
+  .commu3 img{
+    height: auto;
+    width: 70%;
+    margin-top: 40%;
+    margin-left: 15%;
+  }
+
+  .commu4 img{
+    height: auto;
+    width: 70%;
+    margin-top: 15%;
+    margin-left: 15%;
+  }
+
+  .port1 img{
+    height: auto;
+    width: 70%;
+    margin-top: 50%;
+    margin-left: 15%;
+  }
+
+  .port2 img{
+    height: auto;
+    width: 70%;
+    margin-top: 60%;
+    margin-left: 15%;
+  }
+
+  .port3 img{
+    height: auto;
+    width: 70%;
+    margin-top: 70%;
+    margin-left: 15%;
+  }
+
+  .ruby1 img{
+    height: auto;
+    width: 60%;
+    margin-top: 35%;
+    margin-left: 15%;
+  }
+
+  .logos img{
+    height: auto;
+    width: 60%;
+    margin-top: 105%;
+    margin-left: 15%;
+  }
+
+  .album img{
+    height: auto;
+    width: 60%;
+    margin-top: 0%;
+    margin-left: 15%;
+  }
+
+  .styleguide img{
+    height: auto;
+    width: 60%;
+    margin-top: 25%;
     margin-left: 15%;
   }

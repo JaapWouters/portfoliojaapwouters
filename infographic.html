@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infographic</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contentpage.css">
+    <link rel="stylesheet" href="fotos.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" href="img/jaapwebicon.png">
+</head>
+<body>
+    <div id="progressbar"></div>
+    <div id="scrollPath"></div>
+
+    <i  onclick="goBack()" class="far fa-3x fa-arrow-alt-circle-left"></i>
+    
+    <section id="sec-1">
+      <div class="container3">
+        <div class="container2"> <img class="background-img2" src="img/Vorm1.svg" alt="background"> </div>
+        <div data-aos="zoom-in" class="design-koptekst">Infographic</div>
+        <a href="#sec-2"> <div> <img class="scroll-img"src="img/scroll.jpg" alt=""> </div> </a>
+      </div>
+    </section>
+
+    <section id="sec-2">
+        <div class="wrapper">
+            <div class="container">
+                <div class="content4">
+            <!-- Slideshow container -->
+
+
+    
+
+  <div class="commu4">
+      <img src="img/Infographic.png" alt="">
+  </div>
+
+  
+</div>
+        
+              <div class="content4">
+                <div class="library-content">
+                  <div class="hoofdtekst" data-aos="fade-up">Illustrator Infographic</div>
+                  <p data-aos="fade-up">
+                    Het 2e gedeelte van de Illustrator opdracht was het de bedoeling om een infographic te maken. Deze heb ik gemaakt over het wel bekende covid-19. 
+                    Ik heb de kleuren een beetje in het thema van de overheid gehouden, dit omdat het een informatieve flyer moet zijn die mensen op tips moet wijzen deze tijden.
+                    <br><br>
+                    Ik heb opgezocht naar de basis regels die het RIVM adviseert en deze op de flyer gezet, ik heb de tekst duidelijker gemaakt door er plaatjes aan toe te voegen.
+                  </p>
+                  </div>
+
+            <div class="ruimte4">
+              <div class="library-content">
+                <div class="hoofdtekst" data-aos="fade-up">Wat heb ik geleerd?</div>
+                <p data-aos="fade-up">
+                    Ik heb met deze opdracht best wat geleerd, vooral op het gebied van Illustrator. Dit was namelijk 1 programma die 
+                    ik voorheen nog nooit gebruikt had. Illustrator had wel wat meer tijd nodig om te begrijpen. Het was even wennen omdat ik normaal 
+                    Photoshop gebruikt voor alles.
+                </p>
+              </div>
+            </div>
+
+            <div class="ruimte5">
+              <div class="library-content">
+                <div class="hoofdtekst" data-aos="fade-up">Wat doe ik de volgende keer anders?</div>
+                <p data-aos="fade-up">
+                  Iets wat ik de volgende keer anders zou doen is vroeg tijdig feedback vragen, hier ging ik deze met deze opdracht de mist in. Ik begon net wat te laat met 
+                  mijn opdrachten en had ze onderschat. Doordat ik niet eerder feedback gevragen had, heb ik deze opdracht voor de focus mediatechnieken niet behaald. Toch ben ik 
+                  wel trots op wat ik gecreeërd heb. Op de ene dingen ben ik meer trots dan op de andere, maar in het algemeen ben ik tevreden met mijn werk.
+                </p>
+              </div>
+            </div>
+
+            <div class="ruimte5">
+              <div class="library-content">
+                <div class="hoofdtekst" data-aos="fade-up">Algemene feedback</div>
+                <p data-aos="fade-up">
+                    "Hey Jaap, de infographic is goed, alleen hier zitten geen grafieken in, je had hier misschien wat data in kunnen 
+                    verwerken."
+                  <br><br>
+                  ~ Rens Brouns
+                  <br><br><br>
+                  "Helaas Jaap, je infographic is wat minder als de rest van je werk.
+                  <br><br>
+                  ~ Joris Ariëns
+                </p>
+              </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <script type="text/javascript">
+      let progress = document.getElementById("progressbar");
+      let totalHeight = document.body.scrollHeight - window.innerHeight;
+      window.onscroll = function(){
+        let progressHeight = (window.pageYOffset / totalHeight) * 100;
+        progress.style.height = progressHeight + "%";
+      }
+    </script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <script>
+      function goBack() {
+        window.history.back();
+      }
+    </script>
+
+</body>
+</html>
