@@ -1,28 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Research</title>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="icon" href="img/jaapwebicon.png">
-</head>
-<body>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="icon" href="img/jaapwebicon.png" />
+  </head>
+  <body>
     <div id="progressbar"></div>
     <div id="scrollPath"></div>
-    
-    <i  onclick="goBack()" class="far fa-3x fa-arrow-alt-circle-left"></i>
+
+    <i onclick="goBack()" class="far fa-3x fa-arrow-alt-circle-left"></i>
 
     <section id="sec-1">
       <dov class="container3">
-        <div class="container2"> <img class="background-img2" src="img/Vorm1.svg" alt="background"> </div>
+        <div class="container2">
+          <img class="background-img2" src="img/Vorm1.svg" alt="background" />
+        </div>
         <div data-aos="zoom-in" class="design-koptekst">Research</div>
         <a href="#sec-2">
-        <div> <img class="scroll-img"src="img/scroll.jpg" alt=""> </div>
+          <div><img class="scroll-img" src="img/scroll.jpg" alt="" /></div>
         </a>
       </dov>
     </section>
@@ -31,54 +39,78 @@
       <div class="column">
         <div class="animaties roww">
           <div>
-            <div class="port-container" onclick="location.href='branding.html'" style="cursor: pointer">
+            <div
+              class="port-container"
+              onclick="location.href='branding.html'"
+              style="cursor: pointer"
+            >
               <div data-aos="fade-up" class="port-card">
-                <img class="card-img" src="img/brandresearch2.png" alt="">
+                <img class="card-img" src="img/brandresearch2.png" alt="" />
                 <h1>Branding</h1>
               </div>
             </div>
           </div>
-      
+
           <div>
-            <div class="port-container" onclick="location.href='sprintx.html'" style="cursor: pointer">
+            <div
+              class="port-container"
+              onclick="location.href='sprintx.html'"
+              style="cursor: pointer"
+            >
               <div data-aos="fade-up" class="port-card">
-                <img class="card-img" src="img/sprintxfoto.png" alt="">
+                <img class="card-img" src="img/sprintxfoto.png" alt="" />
                 <h1>Sprint X</h1>
               </div>
             </div>
           </div>
-      
+
           <div>
-            <div class="port-container" onclick="location.href='rubymus.html'" style="cursor: pointer">
+            <div
+              class="port-container"
+              onclick="location.href='rubymus.html'"
+              style="cursor: pointer"
+            >
               <div data-aos="fade-up" class="port-card">
-                <img class="card-img" src="img/rubymusfoto.png" alt="">
+                <img class="card-img" src="img/rubymusfoto.png" alt="" />
                 <h1>Ruby Mus</h1>
               </div>
             </div>
           </div>
         </div>
-      
+
         <div class="animaties roww">
           <div>
-            <div class="port-container" onclick="location.href='grafieken.html'" style="cursor: pointer">
+            <div
+              class="port-container"
+              onclick="location.href='grafieken.html'"
+              style="cursor: pointer"
+            >
               <div data-aos="fade-up" class="port-card">
-                <img class="card-img" src="img/grafiekfoto.png" alt="">
+                <img class="card-img" src="img/grafiekfoto.png" alt="" />
                 <h1>Grafieken</h1>
               </div>
             </div>
           </div>
-      
+
           <div>
-            <div class="port-container" onclick="location.href='infographic.html'" style="cursor: pointer">
+            <div
+              class="port-container"
+              onclick="location.href='infographic.html'"
+              style="cursor: pointer"
+            >
               <div data-aos="fade-up" class="port-card">
-                <img class="card-img" src="img/infographicfoto.png" alt="">
+                <img class="card-img" src="img/infographicfoto.png" alt="" />
                 <h1>Infographic</h1>
               </div>
             </div>
           </div>
-      
+
           <div>
-            <div class="port-container" onclick="location.href=''" style="cursor: pointer">
+            <div
+              class="port-container"
+              onclick="location.href=''"
+              style="cursor: pointer"
+            >
               <div data-aos="fade-up" class="port-card">
                 <!-- <img class="card-img" src="img/" alt="">
                 <h1></h1> -->
@@ -88,20 +120,19 @@
         </div>
       </div>
     </section>
-    
 
     <script type="text/javascript">
       let progress = document.getElementById("progressbar");
       let totalHeight = document.body.scrollHeight - window.innerHeight;
-      window.onscroll = function(){
+      window.onscroll = function () {
         let progressHeight = (window.pageYOffset / totalHeight) * 100;
         progress.style.height = progressHeight + "%";
-      }
+      };
     </script>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init();
+      AOS.init();
     </script>
 
     <script>
@@ -109,5 +140,5 @@
         window.history.back();
       }
     </script>
-</body>
+  </body>
 </html>
